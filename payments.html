@@ -1,1 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Payments — Panjery Property</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Payments</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="tenants.html">Tenants</a>
+      <a href="add_tenant.html">Add Tenant</a>
+      <a href="payments.html">Payments</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Record a Payment</h2>
+      <form id="payment-form">
+        <label>Tenant<select id="payment-tenant"></select></label>
+        <label>Month<input type="month" id="payment-month" required></label>
+        <label>Amount (BDT)<input type="number" id="payment-amount" required></label>
+        <label>Date<input type="date" id="payment-date" required></label>
+        <button type="submit">Save Payment</button>
+      </form>
+      <div id="payment-msg" class="note"></div>
+    </section>
+
+    <section class="card">
+      <h2>Payment History</h2>
+      <table id="payments-table">
+        <thead><tr><th>Tenant</th><th>Month</th><th>Amount</th><th>Date</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
 
