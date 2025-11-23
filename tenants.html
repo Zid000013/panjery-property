@@ -1,1 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tenants — Panjery Property</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tenants</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="tenants.html">Tenants</a>
+      <a href="add_tenant.html">Add Tenant</a>
+      <a href="payments.html">Payments</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Filter by branch</h2>
+      <select id="branch-filter"><option value="">-- All branches --</option></select>
+    </section>
+
+    <section class="card">
+      <h2>Tenants List</h2>
+      <table id="tenants-table">
+        <thead><tr><th>Name</th><th>Phone</th><th>Room</th><th>Rent</th><th>Balance</th><th>Actions</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
 
